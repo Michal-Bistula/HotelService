@@ -42,16 +42,16 @@ public class Main {
                         break;
                     case 0:
                         System.out.println("Koniec");
+                        System.exit(0);
                         break;
                     default:
-                        System.out.println("i tak tego nie zobaczysz");
+                       // menu();
                         break;
                 }
-
             } catch (InputMismatchException e) {
                 menu();
             }
         }
-        while (input > 0);
+        while (input != 0);
     }
 }
